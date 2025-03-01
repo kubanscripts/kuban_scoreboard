@@ -15,12 +15,12 @@ body {
 
 #scoreboard {
     position: absolute;
-    top: 5%; /* Adjusted to be slightly lower */
+    top: 5%; 
     left: 50%;
     transform: translateX(-50%);
-    width: 65%;  /* Increased width to be more horizontal */
-    height: auto; /* Auto height */
-    background: #1e1e24cb;    ; /* Darker background */
+    width: 65%; 
+    height: auto; 
+    background: #1e1e24cb;    ; 
     color: white;
     padding: 10px 15px;
     text-align: center;
@@ -35,26 +35,26 @@ body {
 }
 
 .header img {
-    width: 240px; /* Increased from 100px to 140px */
+    width: 240px; 
     height: auto;
     object-fit: contain;
 }
 
 .info {
-    background: rgba(0, 0, 0, 0.3); /* Blends with scoreboard */
+    background: rgba(0, 0, 0, 0.3);
     padding: 10px;
     font-size: 16px;
-    border-radius: 0px 0px 5px 5px; /* Makes it look like part of the background */
+    border-radius: 0px 0px 5px 5px; 
     display: flex;
     justify-content: center;
     gap: 20px;
-    width: 100%; /* Makes sure it connects with the background */
+    width: 100%; 
 }
 
 .team-stats {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Space between icons */
+    gap: 40px; 
     margin-top: 10px;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .team-stats img {
-    width: 50px;  /* Slightly smaller for a balanced look */
+    width: 50px;  
     height: 50px;
     object-fit: contain;
 }

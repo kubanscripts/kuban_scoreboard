@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: transparent;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 5%; /* Adjusted to be slightly lower */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;  /* Increased width to be more horizontal */
+    height: auto; /* Auto height */
+    background: #1e1e24cb;    ; /* Darker background */
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.header img {
+    width: 240px; /* Increased from 100px to 140px */
+    height: auto;
+    object-fit: contain;
+}
+
+.info {
+    background: rgba(0, 0, 0, 0.3); /* Blends with scoreboard */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0px 0px 5px 5px; /* Makes it look like part of the background */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%; /* Makes sure it connects with the background */
+}
+
+.team-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.team-stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-stats img {
+    width: 50px;  /* Slightly smaller for a balanced look */
+    height: 50px;
+    object-fit: contain;
+}
+
+.team-stats span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}

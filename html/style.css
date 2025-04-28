@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: transparent;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    background: #181A1B; /* Dark background */
+    color: #EAEAEA;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.top-right-boxes {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.info-box {
+    background: #212526; /* Darker gray */
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    color: #D1D1D1;
+}
+
+.info-box span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.emergency-services {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.service-card {
+    background: #212526; /* Slightly lighter dark background */
+    padding: 15px;
+    border-radius: 10px;
+    width: 23%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.status {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Updated status colors */
+.status.none { color: #C0C0C0; }
+.status.very-low { color: #FF6B6B; }
+.status.low { color: #FFB74D; }
+.status.medium { color: #FFD700; }
+.status.high { color: #4CAF50; }
+.status.very-high { color: #00E676; }
+
+.status-bar {
+    width: 100%;
+    height: 6px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+/* Updated bar colors */
+.bar-none { background: #666666; }
+.bar-very-low { background: #FF6B6B; }
+.bar-low { background: #FFB74D; }
+.bar-medium { background: #FFD700; }
+.bar-high { background: #4CAF50; }
+.bar-very-high { background: #00FF85; }
+
+.footer {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9E9E9E;
+}
+
+.key-box {
+    background: #212526;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.05);
+}
+
+/* Player List Styles */
+.players-online {
+    margin-top: 20px;
+    background: #212526;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.05);
+}
+
+.players-online table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #EAEAEA;
+}
+
+.players-online th,
+.players-online td {
+    padding: 8px;
+    text-align: left;
+}
+
+.players-online th {
+    background: #181A1B;
+    color: #FFFFFF;
+}
+
+.players-online tr:nth-child(even) {
+    background: #1E2022;
+}
+
+.players-online tr:hover {
+    background: #2A2D30;
+}
+
+/* Custom Badges */
+.badge {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.admin { background: #E53935; color: #FFF; }
+.staff { background: #1E88E5; color: #FFF; }
+
